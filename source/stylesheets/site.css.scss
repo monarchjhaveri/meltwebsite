@@ -5,7 +5,7 @@ $font: DidactGothic, sans-serif;
 
 @font-face {
   font-family: "DidactGothic";
-  src: url("/fonts/DidactGothic-Regular.ttf") format("opentype");
+  src: url("../fonts/DidactGothic-Regular.ttf") format("opentype");
 }
 
 * {
@@ -67,7 +67,7 @@ $font: DidactGothic, sans-serif;
 }
 
 .hero {
-  background-image: url("/images/hero.png");
+  background-image: url("../images/hero.png");
   background-size: cover;
   width: 100%;
   height: 300px;
@@ -116,7 +116,7 @@ $font: DidactGothic, sans-serif;
       }
 
       &.melt-pink-icon {
-        background-image: url(/images/melt-icon-pink.png);
+        background-image: url(../images/melt-icon-pink.png);
         background-size: contain;
         background-position: center;
         background-repeat: no-repeat;
