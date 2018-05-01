@@ -1,25 +1,55 @@
+@import './reset';
+
 $navbar-font-size: 25px;
+$font: DidactGothic, sans-serif;
 
-.navbar {
-  padding-top: 30px;
-
-  .links {
-    float: right;
-
-    a {
-      margin: 0 10px;
-      color: black;
-      text-decoration: none;
-      font-size: $navbar-font-size;
-      line-height: $navbar-font-size;
-      vertical-align: bottom;
-    }
-  }
+@font-face {
+  font-family: "DidactGothic";
+  src: url("/fonts/DidactGothic-Regular.ttf") format("opentype");
 }
 
-.melt-logo {
-  height: 50px;
-  vertical-align: bottom;
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  font-family: DidactGothic, sans-serif !important;
+}
+
+.navbar {
+  $horizontal-padding: 40px;
+  display: table;
+  height: 80px;
+  width: 100%;
+  padding-left: $horizontal-padding;
+  padding-right: $horizontal-padding;
+
+  .melt-logo {
+    display: table-cell;
+    width: 200px;
+    vertical-align: middle;
+
+    img {
+      vertical-align: middle;
+      height: 50px;
+    }
+  }
+
+  .links-wrapper {
+    display: table-cell;
+    vertical-align: middle;
+    .links {
+      float: right;
+      .link {
+        padding: 0 10px;
+        color: black;
+        text-decoration: none;
+        font-size: $navbar-font-size;
+        line-height: $navbar-font-size;
+        font-weight: 600;
+        font-size: 22px;
+      }
+    }
+  }
 }
 
 .main-wrapper {
@@ -40,5 +70,82 @@ $navbar-font-size: 25px;
   background-image: url("/images/hero.png");
   background-size: cover;
   width: 100%;
-  height: 400px;
+  height: 300px;
+  display: table;
+  .hero-message-wrapper {
+    display: table-cell;
+    padding: 0 250px;
+    vertical-align: middle;  
+
+    .hero-message {
+      text-align: center;
+      margin: auto;
+      max-width: 750px;
+      font-weight: 600;
+      font-size: 42px;
+      color: white;
+    }
+  }
+}
+
+.section.sub-hero {
+  font-size: 32px;
+  text-align: center;
+  width: 100%;
+  padding: 60px 0;
+}
+
+.section.about-main {
+  .about-main-content {
+    display: table;
+    width: 100%;
+
+    .about-main-content-section {
+      display: table-cell;
+      vertical-align: top;
+      width: 33%;
+      font-size: 22px;
+      line-height: 30px;
+
+      p {
+        margin-bottom: 30px;
+        letter-spacing: 3px;
+        font-weight: 600;
+        font-size: 17px;
+        padding: 0 20px;
+      }
+
+      &.melt-pink-icon {
+        background-image: url(/images/melt-icon-pink.png);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+    }
+  }
+}
+
+.footer {
+  padding: 100px 0 50px 0;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;  
+
+  font-size: 22px;
+  
+  .contact-info {
+    table {
+      text-align: left;
+      tr, th {
+        padding: 10px;
+      }
+      th {
+        font-weight: 600;
+      }
+    }
+  }
+
+  .copyright {
+    float: right;
+  }
 }
