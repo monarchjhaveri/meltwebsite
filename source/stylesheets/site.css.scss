@@ -1,24 +1,44 @@
-body {
-  background-color: #fbc547;
-  color: #333;
-  font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir",
-    "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans",
-    "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu",
-    "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
-  padding: 18vh 1rem;
-  text-align: center;
-}
+$navbar-font-size: 25px;
 
-a {
-  color: rgba(#000, 0.7);
+.navbar {
+  padding-top: 30px;
 
-  &:focus,
-  &:hover {
-    color: rgba(#000, 0.6);
+  .links {
+    float: right;
+
+    a {
+      margin: 0 10px;
+      color: black;
+      text-decoration: none;
+      font-size: $navbar-font-size;
+      line-height: $navbar-font-size;
+      vertical-align: bottom;
+    }
   }
 }
 
-.middleman-logo {
-  margin-bottom: 1rem;
-  width: 10rem;
+.melt-logo {
+  height: 50px;
+  vertical-align: bottom;
+}
+
+.main-wrapper {
+  width: 100%;
+}
+
+.section {
+  max-width: 1080px;
+  margin-left: auto;
+  margin-right: auto;  
+}
+
+.wide-section {
+  max-width: 100%;
+}
+
+.hero {
+  background-image: url("/images/hero.png");
+  background-size: cover;
+  width: 100%;
+  height: 400px;
 }
