@@ -7,28 +7,26 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Use the title from a page's frontmatter if it has one -->
-    <title><%= current_page.data.title || "Melt" %></title>
+    <title>Melt | Contact</title>
     
-    <%= stylesheet_link_tag 'site' %>
-    <%= javascript_include_tag 'site' %>
+    <link href="//monarchjhaveri.github.io/meltwebsite/stylesheets/site.css" rel="stylesheet" />
+    <script src="//monarchjhaveri.github.io/meltwebsite/javascripts/site.js"></script>
   </head>
   <body>
     <div class="main-wrapper">
       <nav class="navbar">
-        <% link_to 'index.html', :class => 'melt-logo', relative: true do %>
-          <%= image_tag "images/melt-logo-sm.png" %>
-        <% end %>
-
+<a href="./" class="melt-logo">          <img src="//monarchjhaveri.github.io/meltwebsite/images/melt-logo-sm.png" alt="Melt logo sm" />
+</a>
         <div class="links-wrapper">
           <div class="links">
-            <%= link_to 'About', 'about.html', relative: true %>
-            <%= link_to 'Projects', 'projects.html', relative: true %>
-            <%= link_to 'Contact', 'contact.html', relative: true %>
+            <a href="about.html">About</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
           </div>
         </div>
       </nav>
 
-      <%= yield %>
+      
 
       <div class="footer">
         <div class="footer-row">
@@ -54,22 +52,14 @@
             </table>
           </div>
           <div class="social-links">
-            <% link_to '#', :class => 'social-link' do %>
-              <%= image_tag "images/twitter.svg" %>
-            <% end %>
-
-            <% link_to '#', :class => 'social-link' do %>
-              <%= image_tag "images/youtube.svg" %>
-            <% end %>
-
-            <% link_to '#', :class => 'social-link' do %>
-              <%= image_tag "images/facebook.svg" %>
-            <% end %>
-
-            <% link_to '#', :class => 'social-link' do %>
-              <%= image_tag "images/linkedin.svg" %>
-            <% end %>
-          </div>
+<a href="#" class="social-link">              <img src="//monarchjhaveri.github.io/meltwebsite/images/twitter.svg" alt="Twitter" />
+</a>
+<a href="#" class="social-link">              <img src="//monarchjhaveri.github.io/meltwebsite/images/youtube.svg" alt="Youtube" />
+</a>
+<a href="#" class="social-link">              <img src="//monarchjhaveri.github.io/meltwebsite/images/facebook.svg" alt="Facebook" />
+</a>
+<a href="#" class="social-link">              <img src="//monarchjhaveri.github.io/meltwebsite/images/linkedin.svg" alt="Linkedin" />
+</a>          </div>
         </div>
         <div class="footer-row">
           <div class="copyright">
