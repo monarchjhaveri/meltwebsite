@@ -177,12 +177,16 @@ table {
 a {
   color: #ff33cc; }
 
-.table-row {
-  display: table;
+.capability-row {
   width: 100%;
-  margin-bottom: 60px; }
-  .table-row .table-cell {
-    display: table-cell; }
+  margin-bottom: 60px;
+  display: inline-block; }
+
+.u-float-left {
+  float: left; }
+
+.u-float-right {
+  float: right; }
 
 .capability-img img {
   display: block;
