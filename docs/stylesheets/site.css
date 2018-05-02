@@ -73,7 +73,7 @@ table {
     vertical-align: middle; }
     .navbar .links-wrapper .links {
       float: right; }
-      .navbar .links-wrapper .links .link {
+      .navbar .links-wrapper .links a {
         padding: 0 10px;
         color: black;
         text-decoration: none;

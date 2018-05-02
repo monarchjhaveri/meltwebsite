@@ -2,29 +2,29 @@
 <html>
   <head>
     <!-- TODO: Change this when site is pushed -->
-    <base href="/meltwebsite">
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Use the title from a page's frontmatter if it has one -->
     <title><%= current_page.data.title || "Melt" %></title>
-    <link href="stylesheets/site.css" rel="stylesheet" />
-    <script src="javascripts/site.js"></script>
+    
+    <%= stylesheet_link_tag 'site' %>
+    <%= javascript_include_tag 'site' %>
   </head>
   <body>
     <div class="main-wrapper">
       <nav class="navbar">
-        <a href="/" class="melt-logo">
-          <img src="images/melt-logo-sm.png" >
-        </a>
+        <% link_to '/', :class => 'melt-logo' do %>
+          <%= image_tag "images/melt-logo-sm.png" %>
+        <% end %>
 
         <div class="links-wrapper">
           <div class="links">
-            <a href="/about.html" class="link">About</a>
-            <a href="/projects.html" class="link">Projects</a>
-            <a href="/blog.html" class="link">Blog</a>
-            <a href="/contact.html" class="link">Contact</a>
+            <%= link_to 'About', 'about.html' %>
+            <%= link_to 'Projects', 'projects.html' %>
+            <%= link_to 'Blog', 'blog.html' %>
+            <%= link_to 'Contact', 'contact.html' %>
           </div>
         </div>
       </nav>
@@ -49,16 +49,27 @@
               <tr>
                 <th>Email:</th>
                 <td>
-                  <a href="mailto:info@melt.ai">info@melt.ai</a>
+                  <%= link_to "mailto:info@melt.ai", "info@melt.ai" %>
                 </td>
               </tr>
             </table>
           </div>
           <div class="social-links">
-            <a class="social-link" href="#"><img src="images/twitter.svg" alt="Link To Melt's Twitter" /></a>
-            <a class="social-link" href="#"><img src="images/youtube.svg" alt="Link To Melt's YouTube" /></a>
-            <a class="social-link" href="#"><img src="images/facebook.svg" alt="Link To Melt's Facebook" /></a>
-            <a class="social-link" href="#"><img src="images/linkedin.svg" alt="Link To Melt's LinkedIn" /></a>
+            <% link_to '#', :class => 'social-link' do %>
+              <%= image_tag "images/twitter.svg" %>
+            <% end %>
+
+            <% link_to '#', :class => 'social-link' do %>
+              <%= image_tag "images/youtube.svg" %>
+            <% end %>
+
+            <% link_to '#', :class => 'social-link' do %>
+              <%= image_tag "images/facebook.svg" %>
+            <% end %>
+
+            <% link_to '#', :class => 'social-link' do %>
+              <%= image_tag "images/linkedin.svg" %>
+            <% end %>
           </div>
         </div>
         <div class="footer-row">
