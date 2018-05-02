@@ -134,6 +134,8 @@ $font: DidactGothic, sans-serif;
   font-size: 22px;
   
   .contact-info {
+    display: table-cell;
+
     table {
       text-align: left;
       tr, th {
@@ -145,7 +147,25 @@ $font: DidactGothic, sans-serif;
     }
   }
 
+  .social-links {
+    display: table-cell;
+    text-align: right;
+    vertical-align: bottom;
+
+    .social-link {
+      height: 40px;
+      width: 40px;
+      display: inline-block;
+    }
+  }
+
   .copyright {
     float: right;
+  }
+
+  .footer-row {
+    display: table;
+    width: 100%;
+    margin-bottom: 30px;
   }
 }

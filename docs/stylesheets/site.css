@@ -144,11 +144,25 @@ table {
   margin-left: auto;
   margin-right: auto;
   font-size: 22px; }
-  .footer .contact-info table {
-    text-align: left; }
-    .footer .contact-info table tr, .footer .contact-info table th {
-      padding: 10px; }
-    .footer .contact-info table th {
-      font-weight: 600; }
+  .footer .contact-info {
+    display: table-cell; }
+    .footer .contact-info table {
+      text-align: left; }
+      .footer .contact-info table tr, .footer .contact-info table th {
+        padding: 10px; }
+      .footer .contact-info table th {
+        font-weight: 600; }
+  .footer .social-links {
+    display: table-cell;
+    text-align: right;
+    vertical-align: bottom; }
+    .footer .social-links .social-link {
+      height: 40px;
+      width: 40px;
+      display: inline-block; }
   .footer .copyright {
     float: right; }
+  .footer .footer-row {
+    display: table;
+    width: 100%;
+    margin-bottom: 30px; }
