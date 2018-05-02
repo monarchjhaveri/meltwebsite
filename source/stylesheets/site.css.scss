@@ -89,7 +89,7 @@ $font: DidactGothic, sans-serif;
 }
 
 .section.sub-hero {
-  font-size: 32px;
+  font-size: 40px;
   text-align: center;
   width: 100%;
   padding: 60px 0;
@@ -168,4 +168,49 @@ $font: DidactGothic, sans-serif;
     width: 100%;
     margin-bottom: 30px;
   }
+}
+
+.about-text-wrapper {
+  .about-text {
+    text-align: center;
+    max-width: 890px;
+    margin: 60px auto;
+    font-size: 25px;
+    line-height: 50px;
+  }
+}
+
+a {
+  color: #ff33cc;
+}
+
+.table-row {
+  display: table;
+  width: 100%;
+  margin-bottom: 60px;
+
+  .table-cell {
+    display: table-cell;
+  }
+}
+
+
+.capability-img {
+  img {
+    display: block;
+    width: auto;
+    height: auto;
+    max-height: 100px;
+    max-width: 100px;
+  }
+}
+
+.capability-title {
+  font-size: 30px;
+  margin: 35px 0;
+}
+
+.capability-description {
+  max-width: 360px;
+  font-size: 20px;
 }
