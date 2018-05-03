@@ -1,5 +1,6 @@
 @import './reset';
 
+$navbar-height: 80px;
 $navbar-font-size: 25px;
 $font: DidactGothic, sans-serif;
 
@@ -13,15 +14,23 @@ $font: DidactGothic, sans-serif;
   -moz-osx-font-smoothing: grayscale;
   box-sizing: border-box;
   font-family: DidactGothic, sans-serif !important;
+  scroll-behavior: smooth;
+}
+
+.content-wrapper {
+  margin-top: $navbar-height;
 }
 
 .navbar {
   $horizontal-padding: 40px;
   display: table;
-  height: 80px;
+  height: $navbar-height;
   width: 100%;
   padding-left: $horizontal-padding;
   padding-right: $horizontal-padding;
+  position: fixed;
+  top: 0;
+  background-color: rgb(255, 255, 255);
 
   .melt-logo {
     display: table-cell;

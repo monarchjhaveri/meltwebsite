@@ -11,11 +11,12 @@
     
     <%= stylesheet_link_tag 'site' %>
     <%= javascript_include_tag 'site' %>
+    <%= javascript_include_tag 'smoothscroll.min' %>
   </head>
   <body>
     <div class="main-wrapper">
       <nav class="navbar">
-        <% link_to '#top', :class => 'melt-logo', relative: true do %>
+        <% link_to '#', :class => 'melt-logo', relative: true do %>
           <%= image_tag "images/melt-logo-sm.png" %>
         <% end %>
 
@@ -27,8 +28,10 @@
           </div>
         </div>
       </nav>
-
-      <%= yield %>
+    
+      <div class="content-wrapper">
+        <%= yield %>
+      </div>
 
       <div class="footer">
         <div class="footer-row">

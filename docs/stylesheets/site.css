@@ -53,14 +53,21 @@ table {
   -moz-osx-font-smoothing: grayscale;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: DidactGothic, sans-serif !important; }
+  font-family: DidactGothic, sans-serif !important;
+  scroll-behavior: smooth; }
+
+.content-wrapper {
+  margin-top: 80px; }
 
 .navbar {
   display: table;
   height: 80px;
   width: 100%;
   padding-left: 40px;
-  padding-right: 40px; }
+  padding-right: 40px;
+  position: fixed;
+  top: 0;
+  background-color: white; }
   .navbar .melt-logo {
     display: table-cell;
     width: 200px;
