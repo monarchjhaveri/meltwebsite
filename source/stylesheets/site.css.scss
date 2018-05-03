@@ -3,6 +3,7 @@
 $navbar-height: 80px;
 $navbar-font-size: 25px;
 $font: DidactGothic, sans-serif;
+$pink: #ff33cc;
 
 @font-face {
   font-family: "DidactGothic";
@@ -190,7 +191,7 @@ $font: DidactGothic, sans-serif;
 }
 
 a {
-  color: #ff33cc;
+  color: $pink;
 }
 
 .capability-row {
@@ -226,4 +227,13 @@ a {
 .capability-description {
   max-width: 360px;
   font-size: 20px;
+}
+
+.button {
+  display: inline-block;
+  padding: 0px 20px;
+  color: $pink;
+  font-weight: 600;
+  cursor: pointer;
+  border: 2px solid $pink;
 }
