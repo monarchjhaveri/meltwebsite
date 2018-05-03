@@ -92,7 +92,7 @@ table {
   width: 100%; }
 
 .section {
-  max-width: 1080px;
+  max-width: 954px;
   margin-left: auto;
   margin-right: auto; }
 
@@ -103,25 +103,23 @@ table {
   background-image: url("//monarchjhaveri.github.io/meltwebsite/images/hero.png");
   background-size: cover;
   width: 100%;
-  height: 300px;
+  height: 400px;
   display: table; }
   .hero .hero-message-wrapper {
     display: table-cell;
-    padding: 0 250px;
     vertical-align: middle; }
     .hero .hero-message-wrapper .hero-message {
       text-align: center;
       margin: auto;
-      max-width: 750px;
-      font-weight: 600;
-      font-size: 42px;
+      max-width: 935px;
+      font-size: 56px;
       color: white; }
 
-.section.sub-hero {
-  font-size: 40px;
+.section.section-header {
+  font-size: 35px;
   text-align: center;
   width: 100%;
-  padding: 60px 0; }
+  padding: 100px 0; }
 
 .section.about-main .about-main-content {
   display: table;
@@ -130,19 +128,18 @@ table {
     display: table-cell;
     vertical-align: top;
     width: 33%;
-    font-size: 22px;
     line-height: 30px; }
     .section.about-main .about-main-content .about-main-content-section p {
       margin-bottom: 30px;
-      letter-spacing: 3px;
-      font-weight: 600;
-      font-size: 17px;
+      font-size: 20px;
       padding: 0 20px; }
-    .section.about-main .about-main-content .about-main-content-section.melt-pink-icon {
-      background-image: url(//monarchjhaveri.github.io/meltwebsite/images/melt-icon-pink.png);
-      background-size: contain;
-      background-position: center;
-      background-repeat: no-repeat; }
+    .section.about-main .about-main-content .about-main-content-section.melt-icon-pink-container {
+      vertical-align: middle;
+      text-align: center; }
+      .section.about-main .about-main-content .about-main-content-section.melt-icon-pink-container .melt-icon-pink {
+        max-height: 100%;
+        max-width: 265px;
+        padding-bottom: 50px; }
 
 .footer {
   padding: 100px 0 50px 0;
