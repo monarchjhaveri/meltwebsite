@@ -11,7 +11,7 @@
     
     <%= stylesheet_link_tag 'site' %>
     <%= javascript_include_tag 'site' %>
-    <%= javascript_include_tag 'smoothscroll.min' %>
+    <%= javascript_include_tag 'smooth-scroll.min' %>
   </head>
   <body>
     <div class="main-wrapper">
@@ -82,5 +82,8 @@
         </div>
       </div>
     </div>
+    <script>
+      var scroll = new SmoothScroll('a[href*="#"]');
+    </script>
   </body>
 </html>
